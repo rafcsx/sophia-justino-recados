@@ -1,0 +1,357 @@
+/* Estilos gerais */
+* {
+    font-family: "Mulish", sans-serif;
+    font-weight: 100;
+    font-weight: bolder;
+    font-style: normal
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #130930; /* Cor de fundo principal da página */
+    color: #FE59BB; /* Cor do texto principal para contraste */
+    overflow-x: hidden; /* Impede rolagem horizontal indesejada */
+    position: relative;
+    min-height: 100vh; /* Garante que o corpo tenha a altura mínima da tela */
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: relative;
+    background-color: #130930; /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    display: flex;
+    align-items: center;
+}
+
+/* Contêiner de navegação */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -50%;
+    height: -50%;
+}
+/* Estilo do logo */
+.nav-menu img {
+    height: 100px; /* Ajuste a altura da logo conforme necessário */
+    display: block; /* Garante que a imagem não fique no mesmo nível de outros elementos */
+}
+
+/* Logo */
+.logo {
+    height: 20px; /* Reduz a altura da logo */
+    margin-right: auto; /* Garante que a logo esteja alinhada à esquerda */
+}
+
+/* Menu de navegação */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Lista de itens do menu */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Itens da lista do menu */
+.nav-menu li {
+    margin: 0 15px; /* Ajuste o espaçamento entre os itens do menu */
+}
+
+/* Links do menu */
+.nav-menu a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Bordas arredondadas dos links */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves para cor e sombra */
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 10;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Link ativo */
+.nav-menu a.active {
+    font-weight: bold; /* Deixa o texto em negrito para o link ativo */
+    background-color: #0a66c2; /* Cor de fundo para o item ativo */
+    box-shadow: 0 0 10px rgba(10, 102, 194, 0.8); /* Sombra azul clara para o item ativo */
+}
+
+/* Efeito hover */
+.nav-menu a:hover {
+    background-color: rgba(254, 89, 187, 0.3); /* Cor de fundo ao passar o mouse com mais opacidade */
+    box-shadow: 0 0 15px rgba(254, 89, 187, 0.7); /* Sombra rosa clara ao passar o mouse */
+}
+
+/* Estilos do menu em dispositivos móveis */
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo do menu de navegação para dispositivos móveis */
+.nav-menu-toggle {
+    display: none; /* Oculta o botão por padrão (desktop) */
+    font-size: 25px;
+    cursor: pointer;
+    color: #FE59BB;
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    right: 20px; /* Ajuste a distância do canto direito conforme necessário */
+    top: 50%; /* Posiciona verticalmente ao centro do cabeçalho */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+/* Estilo do menu de navegação para dispositivos móveis */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none; /* Oculta o menu no mobile */
+    }
+
+    .nav-menu-toggle {
+        display: block; /* Exibe o botão de menu no mobile */
+    }
+}
+
+/* Estilo do formulário */
+.signup {
+    background: #16213e;
+    padding: 20px;
+    max-width: 600px; /* Ajusta a largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form {
+    background: #16213e; /* Fundo do formulário */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%; /* Ajusta a largura para 100% */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+.btn-submit {
+    background: #ff6f91;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #ff4c81;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none; /* Oculta o menu no mobile */
+    }
+
+    /* Estilo do logo */
+
+}
+
+    .nav-menu-toggle {
+        display: block; /* Exibe o botão de menu no mobile */
+    }
+
+    /* Estilo do formulário no mobile */
+    .signup {
+        width: 90%; /* Ajusta a largura do formulário no mobile */
+        padding: 15px;
+        margin: 10px auto; /* Reduz o espaçamento externo */
+    }
+
+    .signup .form h2 {
+        font-size: 1.5em;
+    }
+
+    .signup .form .form-control {
+        font-size: 0.9em;
+    }
+
+    .signup .form .btn-submit {
+        font-size: 0.9em;
+    }
+
+
+@media (max-width: 480px) {
+    .location-info h2 {
+        font-size: 1.2em;
+    }
+
+    /* Estilo do formulário no mobile */
+    .signup .form h2 {
+        font-size: 1.2em;
+    }
+
+    .signup .form .form-control {
+        font-size: 0.9em;
+    }
+
+    .signup .form .btn-submit {
+        font-size: 0.8em;
+    }
+}
+
+/* Estilo para a área de comentário */
+.comment {
+    border: 1px solid #ddd; /* Borda dos comentários */
+    border-radius: 8px; /* Bordas arredondadas dos comentários */
+    padding: 15px; /* Espaçamento interno do comentário */
+    margin-bottom: 20px; /* Espaçamento entre os comentários */
+    position: relative; /* Necessário para posicionar elementos internos, se necessário */
+    display: flex;
+    flex-direction: column; /* Garante que o texto se ajuste verticalmente */
+    background-color: #fff; /* Cor de fundo do comentário */
+    color: #333; /* Cor do texto do comentário */
+    text-align: justify; /* Justifica o texto */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+    min-height: 100px; /* Ajuste a altura mínima conforme necessário */
+    overflow: hidden; /* Garante que o texto longo não cause overflow */
+}
+
+/* Adicionar um ajuste para a quebra de linha e evitar overflow */
+.comment p {
+    margin: 0; /* Remove a margem do parágrafo */
+    word-wrap: break-word; /* Quebra a linha de palavras longas */
+    overflow-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+    white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+    line-height: 1.5; /* Ajusta a altura da linha para melhorar a legibilidade */
+}
+
+/* Estilo para a data dos comentários */
+.comment .date {
+    font-size: 0.9em;
+    color: #999; /* Cor da data */
+    margin-bottom: 10px; /* Espaço abaixo da data */
+}
+
+/* Botão de excluir */
+.comment button.btn-delete {
+    background-color: #ff4c81; /* Cor do botão de excluir */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.comment button.btn-delete:hover {
+    background-color: #ff6f91; /* Cor do botão de excluir ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Estilos responsivos para comentários */
+@media (min-width: 768px) {
+    #comments-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Espaço entre os comentários */
+    }
+
+    .comment {
+        width: calc(50% - 20px); /* Exibe dois comentários por linha */
+    }
+}
+
+@media (max-width: 767px) {
+    #comments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espaço entre os comentários */
+    }
+
+    .comment {
+        width: 100%; /* Ocupa 100% da largura do contêiner */
+    }
+}
+
+/* Estilo do footer */
+footer {
+    position: relative;
+    background-color: #1a0d3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #FE59BB;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+}
+
+.name {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #FE59BB;
+    text-decoration: none;
+}
+
+.navFont {
+    font-family: "Mulish", sans-serif;
+    font-weight: bolder; /* Define o peso da fonte como bolder */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}
+
+/* Centraliza a imagem dentro do contêiner */
+.image-center {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin-top: 20px; /* Espaçamento superior, ajuste conforme necessário */
+}
+
+.image-center img {
+    max-width: 60%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas, ajuste conforme desejado */
+}

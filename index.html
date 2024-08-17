@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Sophia Justino</title>
+
+    <!-- Preconectar e pré-carregar recursos -->
+    <link rel="preconnect" href="https://example.com">
+    <link rel="dns-prefetch" href="https://example.com">
+    <link rel="preload" href="important-resource.js" as="script">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/2ZqxTJg/favicon.png">
+
+    <!-- Carregar CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <!-- Menu Toggle para mobile -->
+            <div class="nav-menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+    
+            <!-- Menu de Navegação -->
+                <nav class="nav-menu">
+                    <img image-center src="./img/logoSJ.svg" alt="Logo">
+                    <ul>
+                        <li><a class="navFont" href="https://sophia-justino.netlify.app/">Home</a></li>
+                        <li><a class="navFont" href="https://sophia-justino-presentes.netlify.app/">Presentes</a></li>
+                        <li><a class="navFont" href="https://sophia-justino-recados.netlify.ap/">Recados</a>
+                        <li><a class="navFont" href="#fotos">Fotos</a></li>
+                        <li><a class="navFont" href="#rsvp">RSVP</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+  
+    <div class="image-center">
+        <img src="https://i.ibb.co/wJxxpyt/xv-sophia.png" alt="Imagem Sophia">
+    <BR><br>
+    </div>
+
+    <section id="signup" class="signup">
+        <div class="container">
+            <i id="balaotxt" class="fa fa-comments fa-3x"></i>
+        </div>
+        <div class="imgrecad">
+            <span>Recado para a <b>aniversariante</b></span>
+        </div>
+        <div class="form">
+            <h2>Deixe um recado</h2>
+            <form id="form-recados">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Nome" name="nome" type="text" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="E-mail" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea cols="60" rows="7" class="form-control" placeholder="Mensagem" name="recado"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <div id="comments-container">
+                <!-- Comentários serão exibidos aqui -->
+            </div>
+        </div>
+    </section><br>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/rafcsilva/" class="social-icon linkedin-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/rafcsx" class="social-icon github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <span class="name">developed by Rafael Correia™</span>
+        <a href="https://www.planalto.gov.br/ccivil_03/leis/l9610.htm" class="copyright" target="_blank">
+            © All rights reserved 2024
+        </a>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+    <script>
+        // Script para alternar o menu de navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            menuToggle.addEventListener('click', function() {
+                if (navMenu.style.display === 'block') {
+                    navMenu.style.display = 'none';
+                } else {
+                    navMenu.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
